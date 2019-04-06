@@ -1,0 +1,27 @@
+﻿@model Vidly.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<h2>@Model.Name</h2>
+
+<dl class="dl-horizontal">
+    <dt>
+        Birthdate:
+    </dt>
+    <dd>
+        @if (Model.BirthDate != null)
+        {
+                @Html.DisplayFor(model => model.BirthDate)
+        }
+    </dd>
+
+    <dt>
+        Membership Type:
+    </dt>
+    <dd>
+        @Model.MembershipType.Name
+    </dd>
+</dl>
