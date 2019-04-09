@@ -1,1 +1,1 @@
-# vidly-web-app
+# movie-rental-webapp
